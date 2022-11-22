@@ -9,56 +9,11 @@ function renderNavBar() {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Lien Management
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reports & Queries</a>
-                    </li>
-                </ul>
+                
             </div>
 
             <div class="collapse navbar-collapse  " id="navbarText">
-                <div class="ms-auto d-flex flex-row align-items-center">
-
-                    <div class="">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Notificaitons
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark" id="notificationContainer"
-                                    aria-labelledby="navbarScrollingDropdown">
-
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    $userName
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                                    <li><a class="dropdown-item" href="/preLogin.html">Logout</a></li>
-                            </li>
-
-                        </ul>
+                
 
 
 
