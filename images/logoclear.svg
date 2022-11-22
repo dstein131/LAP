@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="265" height="104" viewBox="0 0 265 104">
+  <defs>
+    <clipPath id="clip-iPhone_14_Pro_Max_1">
+      <rect width="265" height="104"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_14_Pro_Max_1" data-name="iPhone 14 Pro Max – 1" clip-path="url(#clip-iPhone_14_Pro_Max_1)">
+    <text id="LIEN_ASSIST_PROGRAM" data-name="LIEN ASSIST PROGRAM" transform="translate(115 77.06)" fill="#ff6d40" font-size="14" font-family="Macha-Book, Macha"><tspan x="0" y="13">LIEN ASSIST PROGRAM</tspan></text>
+    <text id="L" transform="translate(111.016 -6.834)" fill="#ff6d40" font-size="80" font-family="Macha-Bold, Macha" font-weight="700"><tspan x="0" y="76">L</tspan></text>
+    <text id="A" transform="translate(155.016 -6.834)" fill="#ff6d40" font-size="80" font-family="Macha-Bold, Macha" font-weight="700"><tspan x="0" y="76">A</tspan></text>
+    <text id="P" transform="translate(206.016 -6.834)" fill="#ff6d40" font-size="80" font-family="Macha-Bold, Macha" font-weight="700"><tspan x="0" y="76">P</tspan></text>
+    <g id="Group_9" data-name="Group 9" transform="translate(-336 -449.94)">
+      <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(387.333 499.992)" fill="#ff6d40" stroke="#000" stroke-width="1">
+        <rect width="39.334" height="39.334" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="38.334" height="38.334" rx="4.5" fill="none"/>
+      </g>
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(354 494)" fill="#ff6d40" stroke="#000" stroke-width="1">
+        <rect width="50" height="50" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="49" height="49" rx="4.5" fill="none"/>
+      </g>
+      <g id="Polygon_1" data-name="Polygon 1" transform="translate(346 461)" fill="#ff6d40">
+        <path d="M 85.82125091552734 44.5 L 1.178749680519104 44.5 L 43.5 0.71939617395401 L 85.82125091552734 44.5 Z" stroke="none"/>
+        <path d="M 43.5 1.438804626464844 L 2.357513427734375 44 L 84.64248657226562 44 L 43.5 1.438804626464844 M 43.5 0 L 87 45 L 0 45 L 43.5 0 Z" stroke="none" fill="#000"/>
+      </g>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="21" height="22" transform="translate(369 518)"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="8" height="9" transform="translate(410 514)"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="8" height="9" transform="translate(386 479)"/>
+    </g>
+  </g>
+</svg>
