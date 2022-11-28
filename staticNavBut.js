@@ -5,7 +5,7 @@ function renderStaticNavBut() {
     var staticNavBut = document.getElementById("staticnavbuttons");
     staticNavBut.innerHTML = `
     <div class="container-fluid  w-75 d-flex align-items-center justify-content-around flex-wrap mb-3">
-    <a href="/auctionscards.html"> 
+    <a href="/newLien.html"> 
         <button type="button" 
                 class="btn btn-success navbut m-2" 
                 style="width: 210px; border-radius: 30px">
