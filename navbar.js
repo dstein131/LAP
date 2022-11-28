@@ -27,6 +27,8 @@ function renderNavBar() {
                             <li><a class="dropdown-item" href="/upcomingNotice.html">Upcoming Notices</a></li>
                             <li><a class="dropdown-item" href="/noAction.html">No Action Needed</a></li>
                             <li><a class="dropdown-item" href="/awaitPay.html">Awaiting Payment</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/manageUsers.html">Manage Users</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
