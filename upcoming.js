@@ -48,6 +48,62 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
+    },
+    {
+        county: "Dekalb County",
+        muni: "Test",
+        dueDate: "July 31, 2019",
+        daysToFirstNotice: 30,
+        daysToLien: 60,
+        details: "Wambugu Mercy"
     }
 ]
 
