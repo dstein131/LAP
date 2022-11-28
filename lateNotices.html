@@ -79,19 +79,47 @@
 
         <!-- left card -->
 
-        <div class="card my-3" style="width: 650px; height: 500px; background-color: #F2F2F2;">
+        <div class="card my-3" style="width: 800px; ; background-color: #F2F2F2;">
             <div class="card-header" style="background-color: #4EBFB4; height: 66px; ">
                 <h5 class="card-title text-center"
                     style="color: white; font-weight: bold; font-size: 20px; margin-top: 10px;">Late Notices
                 </h5>
             </div>
 
-            <div class="card-body d-flex flex-column align-items-center justify-content-around">
+            <div class="card-body d-flex flex-column align-items-center ">
                 
-                    <div class="d-flex flex-column">
-                       test
-
-
+                    <div class="d-flex flex-column w-100">
+                        <table class="table table-sm table-hover table-striped align-middle">
+                            <thead>
+                              <tr>
+                                <th scope="col">County/Muni</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="latetable">
+                              <!-- <tr>
+                                <td>Mark</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary">View</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Mark</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>
+                                <td>Mark</td>
+                                <td colspan="2">Larry the Bird</td>
+                                <td><button type="button" class="btn btn-primary">View</button></td>
+                              </tr> -->
+                            </tbody>
+                          </table>
                     </div>
                
                
@@ -133,6 +161,7 @@
         crossorigin="anonymous"></script>
     <script src="/navbar.js"></script>
     <script src="/staticNavBut.js"></script>
+    <script src="/late.js"></script>
 </body>
 
 </html>
