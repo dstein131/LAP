@@ -11,7 +11,7 @@ function renderNavBar() {
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                        <a class="nav-link active" aria-current="page" href="/index.html">Dashboard</a>
                     </li>
 
                     <li class="nav-item dropdown">
