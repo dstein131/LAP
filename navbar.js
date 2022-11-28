@@ -59,6 +59,8 @@ function renderNavBar() {
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
+                                    <li><a class="dropdown-item" href="/manageUsers.html">Manage Users</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="/login.html">Logout</a></li>
                             </li>
 
