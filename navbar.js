@@ -22,7 +22,11 @@ function renderNavBar() {
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="/newLien.html">Start New Lien</a></li>
                             <li><a class="dropdown-item" href="/updateProp.html">Update Property</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/lateNotices.html">Late Notices</a></li>
+                            <li><a class="dropdown-item" href="/upcomingNotice.html">Upcoming Notices</a></li>
+                            <li><a class="dropdown-item" href="/noAction.html">No Action Needed</a></li>
+                            <li><a class="dropdown-item" href="/awaitPay.html">Awaiting Payment</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -55,7 +59,7 @@ function renderNavBar() {
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                                    <li><a class="dropdown-item" href="/preLogin.html">Logout</a></li>
+                                    <li><a class="dropdown-item" href="/login.html">Logout</a></li>
                             </li>
 
                         </ul>
