@@ -18,7 +18,7 @@ function renderStaticNavBut() {
                 </div>
         </button>
     </a>
-    <a href="/demoAuctions.html">
+    <a href="/updateProp.html">
         <button type="button" 
             class="btn btn-success navbut m-2" 
             style="width: 210px; border-radius: 30px">
@@ -31,7 +31,7 @@ function renderStaticNavBut() {
                 </div>
         </button>
     </a>
-    <a href="/manageBidders.html">
+    <a href="/reports.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
     style="width: 210px; border-radius: 30px">
@@ -44,7 +44,7 @@ function renderStaticNavBut() {
         </div>
 </button>
     </a>
-    <a href="/wonParcels.html">
+    <a href="/countySettings.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
     style="width: 210px; border-radius: 30px">
@@ -58,7 +58,7 @@ function renderStaticNavBut() {
 </button>
     </a>
 
-    <a href="/invoices.html">
+    <a href="/muniSettings.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
     style="width: 210px; border-radius: 30px">

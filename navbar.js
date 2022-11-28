@@ -19,14 +19,14 @@ function renderNavBar() {
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Lien Management
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/newLien.html">Start New Lien</a></li>
+                            <li><a class="dropdown-item" href="/updateProp.html">Update Property</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reports & Queries</a>
+                        <a class="nav-link" href="/reports.html">Reports & Queries</a>
                     </li>
                 </ul>
             </div>
