@@ -6,7 +6,7 @@ function renderStaticNavBut() {
     staticNavBut.innerHTML = `
     <div class="container-fluid  w-75 d-flex align-items-center justify-content-around flex-wrap mb-3">
 
-    <a href="/newLien.html"> 
+    <a href="/index.html"> 
         <button type="button" 
                 class="btn btn-success navbut m-2" 
                 style="width: 210px; border-radius: 30px">
