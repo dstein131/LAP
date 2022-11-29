@@ -5,6 +5,21 @@ function renderStaticNavBut() {
     var staticNavBut = document.getElementById("staticnavbuttons");
     staticNavBut.innerHTML = `
     <div class="container-fluid  w-75 d-flex align-items-center justify-content-around flex-wrap mb-3">
+
+    <a href="/newLien.html"> 
+        <button type="button" 
+                class="btn btn-success navbut m-2" 
+                style="width: 210px; border-radius: 30px">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="/images/dash.svg" 
+                        alt="..."
+                        style="width: 20px; height: 20px; margin-right: 10px"
+                        >
+                    Dashboard
+                </div>
+        </button>
+    </a>
+
     <a href="/newLien.html"> 
         <button type="button" 
                 class="btn btn-success navbut m-2" 
