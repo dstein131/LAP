@@ -85,7 +85,7 @@
 
         <!-- left card -->
 
-        <div class="card my-3" style="width: 800px; height: 500px; background-color: #F2F2F2;">
+        <div class="card my-3" style="width: 800px; min-height: 500px; background-color: #F2F2F2;">
             <div class="card-header" style="background-color: #4EBFB4; height: 66px; ">
                 <h5 class="card-title text-center"
                     style="color: white; font-weight: bold; font-size: 20px; margin-top: 10px;">Enter Single Property
@@ -93,8 +93,8 @@
             </div>
 
             <div class="card-body">
-                <div class="d-flex flex-row align-items-center justify-content-around">
-                    <div class="d-flex flex-column">
+                <div class="d-flex flex-row flex-wrap align-items-center justify-content-around">
+                     <div class="d-flex flex-column mx-2" style="min-width: 200px">
                         <div class="mb-3">
                             <label for="parcelid" class="form-label">Field 1</label>
                             <input type="text" class="form-control" id="parcelid" placeholder="Field 1">
@@ -117,7 +117,7 @@
 
 
                     </div>
-                    <div class="d-flex flex-column">
+                     <div class="d-flex flex-column mx-2" style="min-width: 200px">
                         <div class="mb-3">
                             <label for="parcelid" class="form-label">Field 5</label>
                             <input type="text" class="form-control" id="parcelid" placeholder="Field 5">
