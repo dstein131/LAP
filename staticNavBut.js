@@ -18,19 +18,7 @@ function renderStaticNavBut() {
                 </div>
         </button>
     </a>
-    <a href="/updateProp.html">
-        <button type="button" 
-            class="btn btn-success navbut m-2" 
-            style="width: 210px; border-radius: 30px">
-                <div class="d-flex align-items-center justify-content-center">
-                    <img src="/images/update.svg"
-                        alt="..."
-                        style="width: 20px; height: 20px; margin-right: 10px"
-                        >
-                   Update Property
-                </div>
-        </button>
-    </a>
+  
     <a href="/reports.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
