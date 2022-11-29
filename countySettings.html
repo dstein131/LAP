@@ -87,9 +87,25 @@
             </div>
 
             <div class="card-body d-flex flex-column align-items-center ">
+                
+                
+                
+                
+                <!-- drop down state selector -->
+                <div class="d-flex flex-row align-items-center justify-content-center mb-2">
+                    <label for="stateSelect" class="form-label" style="width: 100px">Select State</label>
+                    <select class="form-select" id="stateSelect" style="width: 200px; margin-left: 10px;">
+                        <option value="0">Select State</option>
+                        <option value="1">Test 2</option>
+                        <option value="2">Test 3</option>
+                        <option value="3">Test 4</option>
+                        <option value="4">Test 5</option>
+
+                    </select>
+                </div>
                 <!-- drop down county selector -->
                 <div class="d-flex flex-row align-items-center justify-content-center mb-2">
-                    <label for="countySelect" class="form-label">Select County</label>
+                    <label for="countySelect" class="form-label" style="width: 100px">Select County</label>
                     <select class="form-select" id="countySelect" style="width: 200px; margin-left: 10px;">
                         <option value="0">Select County</option>
                         <option value="1">Test 2</option>
@@ -99,6 +115,7 @@
 
                     </select>
                 </div>
+                <button type="button" class="btn btn-success" style="width: 200px; margin-top: 10px;">Add New County</button>
 
                 
                     <div class="card border-0 " style="width: 600px; ; background-color: #F2F2F2;">
