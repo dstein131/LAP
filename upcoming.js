@@ -117,7 +117,7 @@ function lateTable(lateNotices) {
                                 <td>Due: ${lateNotices.dueDate}</td>
                                 <td>${lateNotices.details}</td>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                                    <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
                                 </td>
                               </tr>
         `
