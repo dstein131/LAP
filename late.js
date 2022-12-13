@@ -124,7 +124,7 @@ function ipNumber(lateNotices) {
     }).length;
 }
 
-// create a function that sorts the array by the due date then details into a new array
+// create a function that sorts the array by the due date then details into 
 function sortDueDate(lateNotices) {
     return lateNotices.sort(function (a, b) {
         if (a.dueDate < b.dueDate) {
@@ -148,14 +148,105 @@ function sortDueDate(lateNotices) {
 
 
 // call the function lateTable
-lateTable(sortDueDate(lateNotices));
+// lateTable(sortDueDate(lateNotices));
 
 noticeNumber(lateNotices);
 
 ipNumber(lateNotices);
 
 
+// take the lateNotices array and group it by due date
+var lateNoticesByDueDate = lateNotices.reduce(function (r, a) {
+    r[a.dueDate] = r[a.dueDate] || [];
+    r[a.dueDate].push(a);
+    return r;
+}
+    , Object.create(null));
+
+console.log(lateNoticesByDueDate);
+
+
+
+// create a function that will create a new table for each due date and populate it with the lateNoticesByDueDate object and map to the DOM element secondtable
+function secondTable(lateNoticesByDueDate) {
+    var table = document.getElementById("secondtable");
+    table.innerHTML = Object.keys(lateNoticesByDueDate).map(function (key) {
+        return `
+        <div class="card mb-2">
+        <div class="card-header">
+          <h5 class="card-title
+            ">Due: ${key}</h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">County/Municipality</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                ${lateNoticesByDueDate[key].map(function (lateNoticesByDueDate) {
+            if (lateNoticesByDueDate.interestedparty === false) {
+                return `
+                <tr>
+                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}<span class="badge bg-secondary ms-1">Delinquent</span>
+                    <td>${lateNoticesByDueDate.details}</td>
+                    <td>
+
+<div class="btn-group">
+<button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+Notices
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Notice ${lateNoticesByDueDate.details}</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Notice All Unnoticed</a></li>
+</ul>
+</div>
+                    <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
+                    </td>
+                    </tr>
+            `} else {
+                return `
+                <tr>
+                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}<span class="badge ms-1" style="background-color: #BF4D34">Interested Party</span></td>
+                    <td>${lateNoticesByDueDate.details}</td>
+                    <td>
+
+<div class="btn-group">
+<button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+Notices
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Notice ${lateNoticesByDueDate.details}</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Notice All Interested Parties</a></li>
+</ul>
+</div>
+                    <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
+                    </td>
+                    </tr>
+            `
+            }
+        }).join("")}
+                </tbody>
+            </table>
+        </div>
+    </div>
+        `
+    }).join("");
+}
+
+secondTable(lateNoticesByDueDate);
 
 
 
 
+
+
+
+
+
+                                
