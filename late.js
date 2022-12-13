@@ -175,7 +175,7 @@ function secondTable(lateNoticesByDueDate) {
         <div class="card mb-2">
         <div class="card-header d-flex align-items-center justify-content-between">
           <h5 class="mt-1">Due: ${key}</h5>
-            <button type="button" class="btn btn-sm btn-success">Send Group Notices</button>
+            <button type="button" class="btn btn-sm btn-success">Send ${key} Notices</button>
         </div>
         <div class="card-body">
             <table class="table table-striped table-hover">
@@ -240,6 +240,10 @@ Notices
 }
 
 secondTable(lateNoticesByDueDate);
+
+
+
+
 
 
 
