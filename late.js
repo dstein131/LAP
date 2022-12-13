@@ -173,9 +173,9 @@ function secondTable(lateNoticesByDueDate) {
     table.innerHTML = Object.keys(lateNoticesByDueDate).map(function (key) {
         return `
         <div class="card mb-2">
-        <div class="card-header">
-          <h5 class="card-title
-            ">Due: ${key}</h5>
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h5 class="mt-1">Due: ${key}</h5>
+            <button type="button" class="btn btn-sm btn-success">Send Group Notices</button>
         </div>
         <div class="card-body">
             <table class="table table-striped table-hover">
@@ -196,7 +196,7 @@ function secondTable(lateNoticesByDueDate) {
                     <td>
 
 <div class="btn-group">
-<button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+<button type="button" class="btn btn-sm btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Notices
 </button>
 <ul class="dropdown-menu">
@@ -216,7 +216,7 @@ Notices
                     <td>
 
 <div class="btn-group">
-<button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+<button type="button" class="btn btn-sm btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 Notices
 </button>
 <ul class="dropdown-menu">
