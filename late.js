@@ -181,9 +181,9 @@ function secondTable(lateNoticesByDueDate) {
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">County/Municipality</th>
-                        <th scope="col">Details</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col" style="width:33%">County/Municipality</th>
+                        <th scope="col" style="width:33%">Details</th>
+                        <th scope="col" style="width:33%">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
