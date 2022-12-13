@@ -8,7 +8,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Wambugu Mercy",
-        noticed: true
+        interestedparty: true
     },
     {
         county: "Dekalb County",
@@ -17,7 +17,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "John Smith",
-        noticed: false
+        interestedparty: false
     },
     {
         county: "Dekalb County",
@@ -26,7 +26,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Ally Johnson",
-        noticed: true
+        interestedparty: true
     },
     {
         county: "Dekalb County",
@@ -35,7 +35,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Jimmy Smith",
-        noticed: true
+        interestedparty: true
     },
     {
         county: "Dekalb County",
@@ -44,7 +44,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Allen Iverson",
-        noticed: false
+        interestedparty: false
     },
     {
         county: "Dekalb County",
@@ -53,7 +53,7 @@ lateNotices = [
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Steve Branch",
-        noticed: true
+        interestedparty: true
     }
 ]
 
@@ -62,7 +62,7 @@ function lateTable(lateNotices) {
     
     var table = document.getElementById("latetable");
     table.innerHTML = lateNotices.map(function (lateNotices) {
-      if (lateNotices.noticed === true) {  
+      if (lateNotices.interestedparty === false) {  
         return `
                             <tr>
                                 <td>${lateNotices.county}/${lateNotices.muni}<span class="badge bg-secondary ms-1">Delinquent</span>
@@ -98,7 +98,7 @@ Notices
 <ul class="dropdown-menu">
 <li><a class="dropdown-item" href="#">Notice ${lateNotices.details}</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="#">Notice All Unnoticed</a></li>
+<li><a class="dropdown-item" href="#">Notice All Interested Parties</a></li>
 </ul>
 </div>
                 <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
@@ -113,14 +113,14 @@ Notices
 function noticeNumber(lateNotices) {
     var noticeNumber = document.getElementById("noticenumber");
     noticeNumber.innerHTML = lateNotices.filter(function (lateNotices) {
-        return lateNotices.noticed === false;
+        return lateNotices.interestedparty === false;
     }).length;
 }
 
 function ipNumber(lateNotices) {
     var noticeNumber = document.getElementById("ipnumber");
     noticeNumber.innerHTML = lateNotices.filter(function (lateNotices) {
-        return lateNotices.noticed === true;
+        return lateNotices.interestedparty === true;
     }).length;
 }
 
