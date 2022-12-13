@@ -59,6 +59,7 @@ lateNotices = [
 
 // create a function to map the array lateNoticers to the DOM element id latetable
 function lateTable(lateNotices) { 
+    
     var table = document.getElementById("latetable");
     table.innerHTML = lateNotices.map(function (lateNotices) {
       if (lateNotices.noticed === true) {  
@@ -108,9 +109,20 @@ Notices
     }).join("");
 }
 
+// add the number of late notices where noticed is false to the DOM element id noticenumber
+function noticeNumber(lateNotices) {
+    var noticeNumber = document.getElementById("noticenumber");
+    noticeNumber.innerHTML = lateNotices.filter(function (lateNotices) {
+        return lateNotices.noticed === false;
+    }).length;
+}
+
+
 
 // call the function lateTable
 lateTable(lateNotices);
+
+noticeNumber(lateNotices);
 
 
 
