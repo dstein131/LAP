@@ -150,9 +150,9 @@ function sortDueDate(lateNotices) {
 // call the function lateTable
 // lateTable(sortDueDate(lateNotices));
 
-noticeNumber(lateNotices);
+// noticeNumber(lateNotices);
 
-ipNumber(lateNotices);
+// ipNumber(lateNotices);
 
 
 // take the lateNotices array and group it by due date
@@ -191,7 +191,7 @@ function secondTable(lateNoticesByDueDate) {
             if (lateNoticesByDueDate.interestedparty === false) {
                 return `
                 <tr>
-                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}<span class="badge bg-secondary ms-1">Delinquent</span>
+                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}</td>
                     <td>${lateNoticesByDueDate.details}</td>
                     <td>
 
@@ -202,7 +202,7 @@ Notices
 <ul class="dropdown-menu">
 <li><a class="dropdown-item" href="#">Notice ${lateNoticesByDueDate.details}</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="#">Notice All Unnoticed</a></li>
+<li><a class="dropdown-item" href="#">Notice All Due on ${key}</a></li>
 </ul>
 </div>
                     <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
@@ -211,7 +211,7 @@ Notices
             `} else {
                 return `
                 <tr>
-                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}<span class="badge ms-1" style="background-color: #BF4D34">Interested Party</span></td>
+                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}</td>
                     <td>${lateNoticesByDueDate.details}</td>
                     <td>
 
@@ -222,7 +222,7 @@ Notices
 <ul class="dropdown-menu">
 <li><a class="dropdown-item" href="#">Notice ${lateNoticesByDueDate.details}</a></li>
 <li><hr class="dropdown-divider"></li>
-<li><a class="dropdown-item" href="#">Notice All Interested Parties</a></li>
+<li><a class="dropdown-item" href="#">Notice All Due on ${key}</a></li>
 </ul>
 </div>
                     <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
