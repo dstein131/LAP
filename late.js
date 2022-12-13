@@ -61,6 +61,17 @@ function lateTable(lateNotices) {
                                 <td>Due: ${lateNotices.dueDate}</td>
                                 <td>${lateNotices.details}</td>
                                 <td>
+                               
+<div class="btn-group">
+  <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Notices
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Notice ${lateNotices.details}</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Notice ${lateNotices.county}</a></li>
+  </ul>
+</div>
                                 <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
                                 </td>
                               </tr>
