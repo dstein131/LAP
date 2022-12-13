@@ -15,7 +15,7 @@ lateNotices = [
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
-        details: "Wambugu Mercy"
+        details: "John Smith"
     },
     {
         county: "Dekalb County",
@@ -23,7 +23,7 @@ lateNotices = [
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
-        details: "Wambugu Mercy"
+        details: "Ally Johnson"
     },
     {
         county: "Dekalb County",
@@ -31,7 +31,7 @@ lateNotices = [
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
-        details: "Wambugu Mercy"
+        details: "Jimmy Smith"
     },
     {
         county: "Dekalb County",
@@ -39,7 +39,7 @@ lateNotices = [
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
-        details: "Wambugu Mercy"
+        details: "Allen Iverson"
     },
     {
         county: "Dekalb County",
@@ -47,7 +47,7 @@ lateNotices = [
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
-        details: "Wambugu Mercy"
+        details: "Steve Branch"
     }
 ]
 
