@@ -65,7 +65,7 @@ function lateTable(lateNotices) {
       if (lateNotices.noticed === true) {  
         return `
                             <tr>
-                                <td>${lateNotices.county}/${lateNotices.muni}<span class="badge bg-success ms-1">Noticed</span>
+                                <td>${lateNotices.county}/${lateNotices.muni}<span class="badge bg-secondary ms-1">Delinquent</span>
                                 <td>Due: ${lateNotices.dueDate}</td>
                                 <td>${lateNotices.details}</td>
                                 <td>
@@ -86,7 +86,7 @@ function lateTable(lateNotices) {
         `} else {
             return `
             <tr>
-                <td>${lateNotices.county}/${lateNotices.muni}<span class="badge bg-danger ms-1">Unnoticed</span></td>
+                <td>${lateNotices.county}/${lateNotices.muni}<span class="badge ms-1" style="background-color: #BF4D34">Interested Party</span></td>
                 <td>Due: ${lateNotices.dueDate}</td>
                 <td>${lateNotices.details}</td>
                 <td>
@@ -117,12 +117,21 @@ function noticeNumber(lateNotices) {
     }).length;
 }
 
+function ipNumber(lateNotices) {
+    var noticeNumber = document.getElementById("ipnumber");
+    noticeNumber.innerHTML = lateNotices.filter(function (lateNotices) {
+        return lateNotices.noticed === true;
+    }).length;
+}
+
 
 
 // call the function lateTable
 lateTable(lateNotices);
 
 noticeNumber(lateNotices);
+
+ipNumber(lateNotices);
 
 
 
