@@ -13,7 +13,7 @@ lateNotices = [
     {
         county: "Dekalb County",
         muni: "Test",
-        dueDate: "July 31, 2019",
+        dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "John Smith",
@@ -31,7 +31,7 @@ lateNotices = [
     {
         county: "Dekalb County",
         muni: "Test",
-        dueDate: "July 31, 2019",
+        dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Jimmy Smith",
@@ -40,7 +40,7 @@ lateNotices = [
     {
         county: "Dekalb County",
         muni: "Test",
-        dueDate: "July 31, 2019",
+        dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Allen Iverson",
@@ -49,7 +49,7 @@ lateNotices = [
     {
         county: "Dekalb County",
         muni: "Test",
-        dueDate: "July 31, 2019",
+        dueDate: "July 31, 2021",
         daysToFirstNotice: 30,
         daysToLien: 60,
         details: "Steve Branch",
@@ -124,10 +124,31 @@ function ipNumber(lateNotices) {
     }).length;
 }
 
+// create a function that sorts the array by the due date then details into a new array
+function sortDueDate(lateNotices) {
+    return lateNotices.sort(function (a, b) {
+        if (a.dueDate < b.dueDate) {
+            return -1;
+        } else if (a.dueDate > b.dueDate) {
+            return 1;
+        } else {
+            if (a.details < b.details) {
+                return -1;
+            } else if (a.details > b.details) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    });
+}
+
+
+
 
 
 // call the function lateTable
-lateTable(lateNotices);
+lateTable(sortDueDate(lateNotices));
 
 noticeNumber(lateNotices);
 
