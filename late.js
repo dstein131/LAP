@@ -3,7 +3,7 @@
 lateNotices = [
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
@@ -12,7 +12,7 @@ lateNotices = [
     },
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
@@ -21,7 +21,7 @@ lateNotices = [
     },
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2019",
         daysToFirstNotice: 30,
         daysToLien: 60,
@@ -30,7 +30,7 @@ lateNotices = [
     },
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
@@ -39,7 +39,7 @@ lateNotices = [
     },
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2020",
         daysToFirstNotice: 30,
         daysToLien: 60,
@@ -48,7 +48,7 @@ lateNotices = [
     },
     {
         county: "Dekalb County",
-        muni: "Test",
+        muni: "Test Municipality",
         dueDate: "July 31, 2021",
         daysToFirstNotice: 30,
         daysToLien: 60,
