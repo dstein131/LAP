@@ -197,7 +197,7 @@ function secondTable(lateNoticesByDueDate) {
                 return `
                 <tr>
                   
-                    <td>${lateNoticesByDueDate.details}</td>
+                    <td class="align-middle">${lateNoticesByDueDate.details}</td>
                     <td>
 
 <div class="btn-group">
@@ -228,7 +228,7 @@ Verifications
                 return `
                 <tr>
                     
-                    <td>${lateNoticesByDueDate.details}</td>
+                    <td class="align-middle">${lateNoticesByDueDate.details}</td>
                     <td>
 
 <div class="btn-group">
