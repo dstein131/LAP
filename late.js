@@ -174,14 +174,19 @@ function secondTable(lateNoticesByDueDate) {
         return `
         <div class="card mb-2">
         <div class="card-header d-flex align-items-center justify-content-between">
-          <h5 class="mt-1">Due: ${key}</h5>
-            <button type="button" class="btn btn-sm btn-success">Send ${key} Notices</button>
+
+         
+          <div><b>${key}</b></div>
+          <div>${lateNoticesByDueDate[key][0].muni}</div>
+          <div>${lateNoticesByDueDate[key][0].county}</div>
+          
+            <button type="button" class="btn btn-sm btn-success">Send Group Notices</button>
         </div>
         <div class="card-body">
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th scope="col" style="width:33%">County/Municipality</th>
+                       
                         <th scope="col" style="width:33%">Details</th>
                         <th scope="col" style="width:33%">Actions</th>
                     </tr>
@@ -191,7 +196,7 @@ function secondTable(lateNoticesByDueDate) {
             if (lateNoticesByDueDate.interestedparty === false) {
                 return `
                 <tr>
-                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}</td>
+                  
                     <td>${lateNoticesByDueDate.details}</td>
                     <td>
 
@@ -205,13 +210,24 @@ Notices
 <li><a class="dropdown-item" href="#">Notice All Due on ${key}</a></li>
 </ul>
 </div>
+
+<div class="btn-group">
+<button type="button" class="btn btn-sm btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+Verifications
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Verify ${lateNoticesByDueDate.details} Notice</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Verify all ${key} Notices</a></li>
+</ul>
+</div>
                     <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
                     </td>
                     </tr>
             `} else {
                 return `
                 <tr>
-                    <td>${lateNoticesByDueDate.county}/${lateNoticesByDueDate.muni}</td>
+                    
                     <td>${lateNoticesByDueDate.details}</td>
                     <td>
 
@@ -223,6 +239,17 @@ Notices
 <li><a class="dropdown-item" href="#">Notice ${lateNoticesByDueDate.details}</a></li>
 <li><hr class="dropdown-divider"></li>
 <li><a class="dropdown-item" href="#">Notice All Due on ${key}</a></li>
+</ul>
+</div>
+
+<div class="btn-group">
+<button type="button" class="btn btn-sm btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+Verifications
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Verify ${lateNoticesByDueDate.details} Notice</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Verify all ${key} Notices</a></li>
 </ul>
 </div>
                     <a href="/reports.html" ><button type="button" class="btn btn-sm btn-primary">View</button></a>
