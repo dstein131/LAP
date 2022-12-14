@@ -172,7 +172,7 @@ function secondTable(lateNoticesByDueDate) {
     var table = document.getElementById("secondtable");
     table.innerHTML = Object.keys(lateNoticesByDueDate).map(function (key) {
         return `
-        <div class="card mb-2">
+        <div class="card mb-2 border border-secondary">
         <div class="card-header d-flex align-items-center justify-content-between">
 
          
@@ -183,7 +183,7 @@ function secondTable(lateNoticesByDueDate) {
             <button type="button" class="btn btn-sm btn-success">Send Group Notices</button>
         </div>
         <div class="card-body">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover ">
                 <thead>
                     <tr>
                        
